@@ -1,0 +1,26 @@
+cat > .gitignore << 'EOF'
+# Fichiers lourds (rasters géoréférencés)
+*.tif
+*.tiff
+*.jpg
+*.jpeg
+*.png
+
+# Fichiers QGIS temporaires
+*.bak
+*.qgd
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Fichiers temporaires Windows
+Thumbs.db
+desktop.ini
+
+# Fichiers shapefile intermédiaires vides
+lieux_georef.*
+non_trouves.csv
+temp1.csv
+EOF
